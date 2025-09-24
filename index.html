@@ -11,6 +11,58 @@
 
 </head>
 <body>
+<<<<<<< HEAD
+    <div class="grid-bg" aria-hidden="true"></div>
+    <main class="container">
+        <section class="card">
+            <div class="card__glow"></div>
+            <header class="card__header">
+                <h1 class="title">Acceso Neo</h1>
+                <p class="subtitle">Interfaz</p>
+            </header>
+            <form id="neoForm" class="form" novalidate>
+                <div class="field">
+                    <label for="name">Nombre</label>
+                    <div class="input-wrap" data-field>
+                        <input id="name" name="name" type="text" placeholder="Ada Lovelace" autocomplete="name" required>
+                        <span class="focus-ring"></span>
+                        <span class="hint">Ingresa tu nombre completo</span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <div class="input-wrap" data-field>
+                        <input id="email" name="email" type="email" placeholder="neo@matrix.io" autocomplete="email" required>
+                        <span class="focus-ring"></span>
+                        <span class="hint">Usa un correo válido</span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="password">Contraseña</label>
+                    <div class="input-wrap" data-field>
+                        <input id="password" name="password" type="password" placeholder="••••••••" minlength="6" required>
+                        <button class="ghost-btn" type="button" id="togglePass" aria-label="Mostrar contraseña">👁️</button>
+                        <span class="focus-ring"></span>
+                        <span class="hint">Mínimo 6 caracteres</span>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button type="submit" class="btn-primary">
+                        <span class="btn-glow"></span>
+                        Ingresar
+                    </button>
+                    <button type="reset" class="btn-secondary">Limpiar</button>
+                </div>
+                <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+            </form>
+            <footer class="card__footer">
+                <small>Diseño: NeoUI • 2025</small>
+            </footer>
+        </section>
+    </main>
+    <script src="Jscript.js" defer></script>
+</body>>
+=======
     <div class="container-fluid">
         <form action="/action_page.php">
             <div class="mb-3 mt-3">
@@ -79,4 +131,5 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+>>>>>>> upstream/develop
 </html>

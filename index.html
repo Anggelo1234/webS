@@ -11,9 +11,16 @@
 
 </head>
 <body>
-    <div class="container-fluid">
-        <form action="/action_page.php">
-            <div class="field">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <main class="container">
+        <section class="card">
+            <div class="card__glow"></div>
+            <header class="card__header">
+                <h1 class="title">Acceso Neo</h1>
+                <p class="subtitle">Interfaz</p>
+            </header>
+            <form id="neoForm" class="form" novalidate>
+                <div class="field">
                     <label for="name">Nombre</label>
                     <div class="input-wrap" data-field>
                         <input id="name" name="name" type="text" placeholder="Ada Lovelace" autocomplete="name" required>
@@ -38,6 +45,20 @@
                         <span class="hint">Mínimo 6 caracteres</span>
                     </div>
                 </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+                <div class="actions">
+                    <button type="submit" class="btn-primary">
+                        <span class="btn-glow"></span>
+                        Ingresar
+                    </button>
+                    <button type="reset" class="btn-secondary">Limpiar</button>
+                </div>
+                <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+            </form>
+            <footer class="card__footer">
+                <small>Diseño: NeoUI • 2025</small>
+            </footer>
+        </section>
+    </main>
+    <script src="Jscript.js" defer></script>
+</body>>
 </html>

@@ -9,22 +9,31 @@
 <body>
     <div>
         <form action="/action_page.php">
-            <div class="mb-3 mt-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-            </div>
-            <div class="mb-3">
-                <label for="pwd" class="form-label">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-            </div>
-            <div class="form-check mb-3">
-                <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                </label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
+            <div class="field">
+                    <label for="name">Nombre</label>
+                    <div class="input-wrap" data-field>
+                        <input id="name" name="name" type="text" placeholder="Ada Lovelace" autocomplete="name" required>
+                        <span class="focus-ring"></span>
+                        <span class="hint">Ingresa tu nombre completo</span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <div class="input-wrap" data-field>
+                        <input id="email" name="email" type="email" placeholder="neo@matrix.io" autocomplete="email" required>
+                        <span class="focus-ring"></span>
+                        <span class="hint">Usa un correo válido</span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="password">Contraseña</label>
+                    <div class="input-wrap" data-field>
+                        <input id="password" name="password" type="password" placeholder="••••••••" minlength="6" required>
+                        <button class="ghost-btn" type="button" id="togglePass" aria-label="Mostrar contraseña">👁️</button>
+                        <span class="focus-ring"></span>
+                        <span class="hint">Mínimo 6 caracteres</span>
+                    </div>
+                </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,97 @@
+/* Estilo simple, limpio y bonito */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+/* Ocultar fondo animado del diseño anterior */
+.grid-bg { display: none; }
+
+.container {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: min(100%, 520px);
+  background: #fff;
+  border: 1px solid #e6e8ee;
+  border-radius: 12px;
+  padding: 24px 20px 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.card__glow { display: none; }
+
+.card__header { text-align: center; margin-bottom: 12px; }
+.title { margin: 6px 0 2px; font-weight: 700; letter-spacing: 0.3px; }
+.subtitle { margin: 0 0 6px; color: #6b7280; font-size: 14px; }
+
+.form { display: grid; gap: 14px; }
+.field label { display: block; font-size: 14px; color: #6b7280; margin-bottom: 6px; }
+
+.input-wrap { position: relative; display: grid; align-items: center; }
+.input-wrap input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border-radius: 10px;
+  border: 1px solid #d9dce3;
+  background: #fff;
+  color: #111827;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.input-wrap input::placeholder { color: #9aa3af; }
+.input-wrap:focus-within input {
+  border-color: #7c9cff;
+  box-shadow: 0 0 0 3px rgba(124,156,255,0.25);
+}
+
+.focus-ring { display: none; }
+.hint { display: block; margin-top: 6px; font-size: 12px; color: #9aa3af; }
+
+.ghost-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 28px;
+  width: 36px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  cursor: pointer;
+}
+.ghost-btn:hover { color: #374151; }
+
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 6px; }
+.btn-primary, .btn-secondary {
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid #d9dce3;
+  background: #f8fafc;
+  color: #111827;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-primary { background: #3b82f6; border-color: #3b82f6; color: #fff; }
+.btn-primary:hover { background: #2f6fe0; border-color: #2f6fe0; }
+.btn-primary .btn-glow { display: none; }
+.btn-secondary:hover { background: #eef2f7; }
+
+.form-msg { min-height: 18px; font-size: 13px; margin-top: 4px; }
+.form-msg.ok { color: #0f9d58; }
+.form-msg.err { color: #d93025; }
+
+.card__footer { margin-top: 10px; text-align: center; color: #9aa3af; font-size: 12px; }
+
+/* Foco accesible */
+:focus-visible { outline: 2px solid rgba(124,156,255,0.7); outline-offset: 2px; }
+
